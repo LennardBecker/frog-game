@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv237l7cfk6pd"]
+
+[ext_resource type="Texture2D" uid="uid://dye0kcqqg7hib" path="res://image.png" id="1_phpjc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8hn0e"]
+size = Vector2(557, 301)
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+top_level = true
+position = Vector2(-32.5, 70.5)
+shape = SubResource("RectangleShape2D_8hn0e")
+
+[node name="Image" type="Sprite2D" parent="."]
+position = Vector2(-34, 73)
+texture = ExtResource("1_phpjc")
